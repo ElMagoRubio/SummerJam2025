@@ -12,8 +12,6 @@ func _ready():
 
 func _on_rotation_time_timeout() -> void:
 	counter = !counter
-	print(counter)
-	
 	if counter == false:
 		sprite.rotation += deg_to_rad(30)
 	else:

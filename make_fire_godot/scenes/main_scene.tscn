@@ -59,3 +59,93 @@ scale = Vector2(0.5, 0.5)
 [node name="Dancer2" parent="DancerGroup2" instance=ExtResource("4_pu3yx")]
 position = Vector2(180, 56)
 scale = Vector2(0.5, 0.5)
+
+[node name="DancerGroup3" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 443.0
+offset_top = 298.0
+offset_right = 781.0
+offset_bottom = 402.0
+
+[node name="Dancer" parent="DancerGroup3" instance=ExtResource("4_pu3yx")]
+position = Vector2(80, 56)
+scale = Vector2(0.5, 0.5)
+
+[node name="Dancer2" parent="DancerGroup3" instance=ExtResource("4_pu3yx")]
+position = Vector2(180, 56)
+scale = Vector2(0.5, 0.5)
+
+[node name="Dancer3" parent="DancerGroup3" instance=ExtResource("4_pu3yx")]
+position = Vector2(280, 56)
+scale = Vector2(0.5, 0.5)
+
+[node name="DancerGroup4" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1476.0
+offset_top = 298.0
+offset_right = 1814.0
+offset_bottom = 402.0
+scale = Vector2(-1, 1)
+
+[node name="Dancer" parent="DancerGroup4" instance=ExtResource("4_pu3yx")]
+position = Vector2(80, 56)
+scale = Vector2(0.5, 0.5)
+
+[node name="Dancer2" parent="DancerGroup4" instance=ExtResource("4_pu3yx")]
+position = Vector2(180, 56)
+scale = Vector2(0.5, 0.5)
+
+[node name="Dancer3" parent="DancerGroup4" instance=ExtResource("4_pu3yx")]
+position = Vector2(280, 56)
+scale = Vector2(0.5, 0.5)
+
+[node name="DancerGroup5" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 305.0
+offset_top = 464.0
+offset_right = 743.0
+offset_bottom = 568.0
+
+[node name="Dancer" parent="DancerGroup5" instance=ExtResource("4_pu3yx")]
+position = Vector2(80, 56)
+scale = Vector2(0.5, 0.5)
+
+[node name="Dancer2" parent="DancerGroup5" instance=ExtResource("4_pu3yx")]
+position = Vector2(180, 56)
+scale = Vector2(0.5, 0.5)
+
+[node name="Dancer3" parent="DancerGroup5" instance=ExtResource("4_pu3yx")]
+position = Vector2(280, 56)
+scale = Vector2(0.5, 0.5)
+
+[node name="Dancer4" parent="DancerGroup5" instance=ExtResource("4_pu3yx")]
+position = Vector2(380, 56)
+scale = Vector2(0.5, 0.5)
+
+[node name="DancerGroup6" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1615.0
+offset_top = 464.0
+offset_right = 2053.0
+offset_bottom = 568.0
+scale = Vector2(-1, 1)
+
+[node name="Dancer" parent="DancerGroup6" instance=ExtResource("4_pu3yx")]
+position = Vector2(80, 56)
+scale = Vector2(0.5, 0.5)
+
+[node name="Dancer2" parent="DancerGroup6" instance=ExtResource("4_pu3yx")]
+position = Vector2(180, 56)
+scale = Vector2(0.5, 0.5)
+
+[node name="Dancer3" parent="DancerGroup6" instance=ExtResource("4_pu3yx")]
+position = Vector2(280, 56)
+scale = Vector2(0.5, 0.5)
+
+[node name="Dancer4" parent="DancerGroup6" instance=ExtResource("4_pu3yx")]
+position = Vector2(380, 56)
+scale = Vector2(0.5, 0.5)
