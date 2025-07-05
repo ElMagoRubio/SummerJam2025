@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3cnsmjr3lf4p"
-path="res://.godot/imported/BG_Totem_1.svg-1579ee586617c751138ba09520c29857.ctex"
+uid="uid://bxkqqvto8bosy"
+path="res://.godot/imported/BG_Totem_3.svg-a8aa8d4dc0d63747e6d2491ab2bd8a39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/BG_Totem_1.svg"
-dest_files=["res://.godot/imported/BG_Totem_1.svg-1579ee586617c751138ba09520c29857.ctex"]
+source_file="res://assets/sprites/totem/BG_Totem_3.svg"
+dest_files=["res://.godot/imported/BG_Totem_3.svg-a8aa8d4dc0d63747e6d2491ab2bd8a39.ctex"]
 
 [params]
 
