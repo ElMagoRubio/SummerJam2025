@@ -1,8 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://bj5y3expj8h4h"]
+[gd_scene load_steps=3 format=3 uid="uid://bj5y3expj8h4h"]
 
 [ext_resource type="PackedScene" uid="uid://dpbuoytncr662" path="res://scenes/totem.tscn" id="1_w2twt"]
+[ext_resource type="PackedScene" uid="uid://dd0ttixkhq8n" path="res://scenes/fire.tscn" id="2_pw63i"]
 
 [node name="MainScene" type="Node2D"]
 
-[node name="Totem" parent="." instance=ExtResource("1_w2twt")]
-position = Vector2(399, 533)
+[node name="Totem2" parent="." instance=ExtResource("1_w2twt")]
+position = Vector2(1600, 534)
+scale = Vector2(0.5, 0.5)
+
+[node name="Totem1" parent="." instance=ExtResource("1_w2twt")]
+position = Vector2(219, 511)
+scale = Vector2(0.5, 0.5)
+
+[node name="Fire" parent="." instance=ExtResource("2_pw63i")]
+position = Vector2(928, 480)
+scale = Vector2(0.4, 0.4)
