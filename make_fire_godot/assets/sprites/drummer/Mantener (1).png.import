@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drwqiigiwlgi5"
-path="res://.godot/imported/BG_Totem_4.svg-df88793c879b32674f69f02467c21f2c.ctex"
+uid="uid://cireljyguam82"
+path="res://.godot/imported/Mantener (1).png-41b06eb0438eea97d4ece18d269c8f30.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/BG_Totem_4.svg"
-dest_files=["res://.godot/imported/BG_Totem_4.svg-df88793c879b32674f69f02467c21f2c.ctex"]
+source_file="res://assets/sprites/drummer/Mantener (1).png"
+dest_files=["res://.godot/imported/Mantener (1).png-41b06eb0438eea97d4ece18d269c8f30.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

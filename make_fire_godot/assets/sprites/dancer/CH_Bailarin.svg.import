@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxkqqvto8bosy"
-path="res://.godot/imported/BG_Totem_3.svg-82aec1085bc398c01ecc57c0ec6a74e0.ctex"
+uid="uid://ctsbxfvysxlb1"
+path="res://.godot/imported/CH_Bailarin.svg-6ff2ec5721bbf05e595d2b2add5164ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/BG_Totem_3.svg"
-dest_files=["res://.godot/imported/BG_Totem_3.svg-82aec1085bc398c01ecc57c0ec6a74e0.ctex"]
+source_file="res://assets/sprites/dancer/CH_Bailarin.svg"
+dest_files=["res://.godot/imported/CH_Bailarin.svg-6ff2ec5721bbf05e595d2b2add5164ab.ctex"]
 
 [params]
 
