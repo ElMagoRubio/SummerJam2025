@@ -1,18 +1,23 @@
 extends RefCounted
-class_name DictatorTest
+class_name TrackDeserializer
 
 func load_track_from_json(level: int, instrument: int, modifier: int) -> Track:
-	var file = FileAccess.open(GlobalConstants.LEVEL_1_MOD_1_MIDIJSON_PATH, FileAccess.READ)
+	
+	var json_path
+	
+	match instrument:
+		0: json_path = GlobalConstants.LEVEL_1_INSTRUMENT_0_MOD_1_MIDIJSON_PATH
+	
+	var file = FileAccess.open(json_path, FileAccess.READ)
 	var content = file.get_as_text()
 	var data = JSON.parse_string(content)
 	
 	# Null check
 	if data == null:
-		push_error("Error in DictatorTest.load_track_from_json: Invalid track JSON")
+		push_error("Error in Dictator.load_track_from_json: Invalid track JSON")
 		return null
 	
 	var track_dict = data[0]
-	# print(track_dict)
 	var track:Track = Track.new()
 	track._level = int(track_dict["level"])
 	track._instrument = int(track_dict["instrument"])
