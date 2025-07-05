@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b15gnarolx46b"]
+
+[ext_resource type="PackedScene" uid="uid://b4d8hkh2h5ca1" path="res://scenes/totem.tscn" id="1_w2twt"]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="Totem" parent="." instance=ExtResource("1_w2twt")]
+position = Vector2(976, 518)

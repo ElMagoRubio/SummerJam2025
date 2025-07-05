@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dtsof8n20vpod"
+path="res://.godot/imported/Jam player.mp3-f3ad14d477bc7a18c29da2f1a0813eb0.mp3str"
+
+[deps]
+
+source_file="res://assets/Audio/Music/Jam player.mp3"
+dest_files=["res://.godot/imported/Jam player.mp3-f3ad14d477bc7a18c29da2f1a0813eb0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
