@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://dpbuoytncr662"]
+
+[ext_resource type="Script" uid="uid://bsamoo3k6u08a" path="res://scripts/ui/totem.gd" id="1_8pvge"]
+[ext_resource type="Texture2D" uid="uid://citkjdj8tmtvt" path="res://assets/sprites/totem/BG_Totem_Body.svg" id="1_qfxbw"]
+[ext_resource type="Texture2D" uid="uid://c3cnsmjr3lf4p" path="res://assets/sprites/totem/BG_Totem_1.svg" id="2_8pvge"]
+[ext_resource type="Texture2D" uid="uid://s3mc3e07i6yx" path="res://assets/sprites/totem/BG_Totem_2.svg" id="3_qxnbm"]
+[ext_resource type="Texture2D" uid="uid://bxkqqvto8bosy" path="res://assets/sprites/totem/BG_Totem_3.svg" id="4_2vugo"]
+[ext_resource type="Texture2D" uid="uid://drwqiigiwlgi5" path="res://assets/sprites/totem/BG_Totem_4.svg" id="5_gfmpx"]
+
+[node name="Totem" type="Node2D"]
+script = ExtResource("1_8pvge")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -285.0
+offset_top = -506.0
+offset_right = 285.0
+offset_bottom = 506.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TotemBody" type="Sprite2D" parent="."]
+texture = ExtResource("1_qfxbw")
+
+[node name="LightLvl4" type="Sprite2D" parent="."]
+texture = ExtResource("2_8pvge")
+
+[node name="LightLvl3" type="Sprite2D" parent="LightLvl4"]
+texture = ExtResource("3_qxnbm")
+
+[node name="LightLvl2" type="Sprite2D" parent="LightLvl4/LightLvl3"]
+texture = ExtResource("4_2vugo")
+
+[node name="LightLvl1" type="Sprite2D" parent="LightLvl4/LightLvl3/LightLvl2"]
+texture = ExtResource("5_gfmpx")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

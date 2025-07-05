@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cgms2a1g8p3yp"
+path="res://.godot/imported/Jam player.ogg-6f59ac8efd180de66527032c5e30709b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/music/Jam player.ogg"
+dest_files=["res://.godot/imported/Jam player.ogg-6f59ac8efd180de66527032c5e30709b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
