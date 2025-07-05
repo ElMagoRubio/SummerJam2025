@@ -13,6 +13,10 @@ config_version=5
 config/name="make_fire_godot"
 config/features=PackedStringArray("4.4", "Forward Plus")
 
+[autoload]
+
+MainTestGlobal="*res://scripts/test/main_test.gd"
+
 [display]
 
 window/size/viewport_width=1920
