@@ -29,7 +29,7 @@ texture_repeat = 2
 sprite_frames = SubResource("SpriteFrames_4l61p")
 animation = &"fire"
 autoplay = "fire"
-frame_progress = 0.027961
+frame_progress = 0.713196
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 671)
