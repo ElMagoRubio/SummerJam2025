@@ -155,22 +155,22 @@ scale = Vector2(0.5, 0.5)
 position = Vector2(380, 56)
 scale = Vector2(0.5, 0.5)
 
-[node name="Player1" parent="." instance=ExtResource("7_c16ls")]
+[node name="Player0" parent="." instance=ExtResource("7_c16ls")]
 position = Vector2(320, 776)
 scale = Vector2(-0.225, 0.225)
 
-[node name="Player2" parent="." instance=ExtResource("7_c16ls")]
+[node name="Player1" parent="." instance=ExtResource("7_c16ls")]
 position = Vector2(1600, 776)
 rotation = 3.14159
 scale = Vector2(0.225, -0.225)
 
-[node name="Player3" parent="." instance=ExtResource("7_c16ls")]
+[node name="Player2" parent="." instance=ExtResource("7_c16ls")]
 position = Vector2(1304, 864)
 rotation = 3.14159
 scale = Vector2(0.25, -0.25)
 
-[node name="Player4" parent="." instance=ExtResource("7_c16ls")]
+[node name="Player3" parent="." instance=ExtResource("7_c16ls")]
 position = Vector2(616, 864)
 scale = Vector2(0.25, 0.25)
 
-[editable path="Player1"]
+[editable path="Player0"]
