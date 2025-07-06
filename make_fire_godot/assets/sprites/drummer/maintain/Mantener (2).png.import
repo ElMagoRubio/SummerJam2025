@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3hakhfbjb74n"
-path="res://.godot/imported/Golpe (4).png-ec79ba79681b30c879eb8887a0762a04.ctex"
+uid="uid://dcvhwr6pjh2gm"
+path="res://.godot/imported/Mantener (2).png-21faa34b84faf50656d24467dc2cb4ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/drummer/Golpe (4).png"
-dest_files=["res://.godot/imported/Golpe (4).png-ec79ba79681b30c879eb8887a0762a04.ctex"]
+source_file="res://assets/sprites/drummer/maintain/Mantener (2).png"
+dest_files=["res://.godot/imported/Mantener (2).png-21faa34b84faf50656d24467dc2cb4ac.ctex"]
 
 [params]
 

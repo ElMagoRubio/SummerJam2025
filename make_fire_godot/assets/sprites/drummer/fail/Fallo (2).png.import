@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd7ipqyngwbr0"
-path="res://.godot/imported/Idle.png-0d61f39e836fd9ae4fa4ce3ef91c197f.ctex"
+uid="uid://cfujc1cns0hpd"
+path="res://.godot/imported/Fallo (2).png-0e18f958d79ad98cc7bce3985ee0ffc8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/drummer/Idle.png"
-dest_files=["res://.godot/imported/Idle.png-0d61f39e836fd9ae4fa4ce3ef91c197f.ctex"]
+source_file="res://assets/sprites/drummer/fail/Fallo (2).png"
+dest_files=["res://.godot/imported/Fallo (2).png-0e18f958d79ad98cc7bce3985ee0ffc8.ctex"]
 
 [params]
 

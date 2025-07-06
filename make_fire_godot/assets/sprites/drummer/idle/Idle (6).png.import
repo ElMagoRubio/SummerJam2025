@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgkjjtn88o8r0"
-path="res://.godot/imported/Golpe (6).png-2e63e8475594029b977e380e399a5940.ctex"
+uid="uid://bqjlsaqnl43ud"
+path="res://.godot/imported/Idle (6).png-bd38467d4c07bc46d369be3c54d1ba4a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/drummer/Golpe (6).png"
-dest_files=["res://.godot/imported/Golpe (6).png-2e63e8475594029b977e380e399a5940.ctex"]
+source_file="res://assets/sprites/drummer/idle/Idle (6).png"
+dest_files=["res://.godot/imported/Idle (6).png-bd38467d4c07bc46d369be3c54d1ba4a.ctex"]
 
 [params]
 
