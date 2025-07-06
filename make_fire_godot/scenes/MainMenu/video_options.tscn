@@ -45,19 +45,15 @@ grow_vertical = 2
 theme_override_constants/separation = 20
 alignment = 1
 
-[node name="FullScreen" type="CheckBox" parent="Audio"]
+[node name="Fullscreen" type="Button" parent="Audio"]
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_font_sizes/font_size = 60
-text = "Pantalla Completa"
+toggle_mode = true
+text = "Pantalla completa"
 
-[node name="Borderless" type="CheckBox" parent="Audio"]
+[node name="Borderless" type="Button" parent="Audio"]
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_font_sizes/font_size = 60
-text = "Sin Bordes"
+toggle_mode = true
+text = "Sin bordes"
 
 [node name="Back" type="Button" parent="Audio"]
 layout_mode = 2
@@ -65,5 +61,9 @@ size_flags_vertical = 8
 theme_override_font_sizes/font_size = 90
 text = "Back"
 
-[node name="SoundPlayer" type="AudioStreamPlayer" parent="Audio/Back"]
+[node name="SoundPlayer" type="AudioStreamPlayer" parent="Audio"]
 stream = ExtResource("2_y7sn0")
+
+[connection signal="toggled" from="Audio/Fullscreen" to="." method="_on_fullscreen_toggled"]
+[connection signal="toggled" from="Audio/Borderless" to="." method="_on_borderless_toggled"]
+[connection signal="pressed" from="Audio/Back" to="." method="_on_back_pressed"]
