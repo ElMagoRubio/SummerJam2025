@@ -172,3 +172,5 @@ scale = Vector2(0.25, -0.25)
 [node name="Player4" parent="." instance=ExtResource("7_c16ls")]
 position = Vector2(616, 864)
 scale = Vector2(0.25, 0.25)
+
+[editable path="Player1"]
