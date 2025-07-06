@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsa6alfg3nefh"
-path="res://.godot/imported/Drum_Q.svg-36c3c529d31cb4c1ffb744b42ecff2ae.ctex"
+uid="uid://ccpgaygkjrnjt"
+path="res://.godot/imported/BG_Piramide-01.png-60534a983bbd69fa3c7f000a1771ded7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/drums/Drum_Q.svg"
-dest_files=["res://.godot/imported/Drum_Q.svg-36c3c529d31cb4c1ffb744b42ecff2ae.ctex"]
+source_file="res://assets/sprites/background/BG_Piramide-01.png"
+dest_files=["res://.godot/imported/BG_Piramide-01.png-60534a983bbd69fa3c7f000a1771ded7.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

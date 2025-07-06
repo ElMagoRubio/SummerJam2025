@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dpbuoytncr662"]
 
-[ext_resource type="Script" uid="uid://bsamoo3k6u08a" path="res://scripts/ui/totem.gd" id="1_8pvge"]
+[ext_resource type="Script" uid="uid://bsamoo3k6u08a" path="res://scripts/controllers/totem.gd" id="1_8pvge"]
 [ext_resource type="Texture2D" uid="uid://citkjdj8tmtvt" path="res://assets/sprites/totem/BG_Totem_Body.svg" id="1_qfxbw"]
 [ext_resource type="Texture2D" uid="uid://c3cnsmjr3lf4p" path="res://assets/sprites/totem/BG_Totem_1.svg" id="2_8pvge"]
 [ext_resource type="Texture2D" uid="uid://s3mc3e07i6yx" path="res://assets/sprites/totem/BG_Totem_2.svg" id="3_qxnbm"]
@@ -11,6 +11,7 @@
 script = ExtResource("1_8pvge")
 
 [node name="Button" type="Button" parent="."]
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5

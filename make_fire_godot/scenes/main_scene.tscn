@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ce1iwr0oeb3oc" path="res://scenes/main_scene.gd" id="1_7ykc4"]
 [ext_resource type="PackedScene" uid="uid://dpbuoytncr662" path="res://scenes/totem.tscn" id="1_w2twt"]
-[ext_resource type="Texture2D" uid="uid://did3cf8xm5u6r" path="res://assets/sprites/background/BG_Piramide-01.svg" id="2_gubc5"]
+[ext_resource type="Texture2D" uid="uid://ccpgaygkjrnjt" path="res://assets/sprites/background/BG_Piramide-01.png" id="2_c16ls"]
 [ext_resource type="PackedScene" uid="uid://dd0ttixkhq8n" path="res://scenes/fire.tscn" id="2_pw63i"]
 [ext_resource type="PackedScene" uid="uid://f0am0bajc314" path="res://scenes/dancer.tscn" id="4_pu3yx"]
 [ext_resource type="PackedScene" uid="uid://cxq28dsu7s8tn" path="res://scenes/sombra_fuego.tscn" id="6_rt2n2"]
@@ -14,7 +14,7 @@ script = ExtResource("1_7ykc4")
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1920.0
 offset_bottom = 1080.0
-texture = ExtResource("2_gubc5")
+texture = ExtResource("2_c16ls")
 
 [node name="Sombra_fuego" parent="." instance=ExtResource("6_rt2n2")]
 position = Vector2(960, 800)
@@ -155,6 +155,22 @@ scale = Vector2(0.5, 0.5)
 position = Vector2(380, 56)
 scale = Vector2(0.5, 0.5)
 
-[node name="Player" parent="." instance=ExtResource("7_c16ls")]
-position = Vector2(200, 848)
-scale = Vector2(0.2, 0.2)
+[node name="Player1" parent="." instance=ExtResource("7_c16ls")]
+position = Vector2(320, 776)
+scale = Vector2(-0.225, 0.225)
+
+[node name="Player2" parent="." instance=ExtResource("7_c16ls")]
+position = Vector2(1600, 776)
+rotation = 3.14159
+scale = Vector2(0.225, -0.225)
+
+[node name="Player3" parent="." instance=ExtResource("7_c16ls")]
+position = Vector2(1304, 864)
+rotation = 3.14159
+scale = Vector2(0.25, -0.25)
+
+[node name="Player4" parent="." instance=ExtResource("7_c16ls")]
+position = Vector2(616, 864)
+scale = Vector2(0.25, 0.25)
+
+[editable path="Player1"]

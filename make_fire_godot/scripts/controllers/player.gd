@@ -3,6 +3,8 @@ extends Node2D
 @onready var timer = $RotationTime
 @onready var sprite = $AnimatedSprite2D
 
+@onready var key # La tecla/instrumento correspondiente al jugador
+
 var counter = false
 
 func _on_play_note_button_down() -> void:
