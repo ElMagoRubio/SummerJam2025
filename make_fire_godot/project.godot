@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="make_fire_godot"
-run/main_scene="uid://bj5y3expj8h4h"
+run/main_scene="uid://dlvtkf0mlykdp"
 config/features=PackedStringArray("4.4", "Forward Plus")
 
 [display]

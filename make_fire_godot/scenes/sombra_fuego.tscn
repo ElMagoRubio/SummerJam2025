@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cxq28dsu7s8tn"]
 
-[ext_resource type="Script" path="res://scripts/controllers/sombra_fuego.gd" id="1_tw8o0"]
+[ext_resource type="Script" uid="uid://coclvb6ptbahe" path="res://scripts/controllers/sombra_fuego.gd" id="1_tw8o0"]
 [ext_resource type="Texture2D" uid="uid://b1g6irrmk1ekn" path="res://assets/sprites/background/BG_Sombra.svg" id="2_adhht"]
 
 [node name="Sombra_fuego" type="Node2D"]
