@@ -1,0 +1,129 @@
+{
+    "level": 1,
+    "instrument": 4,
+    "song_bpm": 110,
+    "tolerance_time": 0.5454545454545455,
+    "tolerance_modifier": 1.0,
+    "notes": [
+        {
+            "original_time": 5.0,
+            "start_time": 4.454545454545454,
+            "end_time": 5.545454545454546
+        },
+        {
+            "original_time": 10.0,
+            "start_time": 9.454545454545455,
+            "end_time": 10.545454545454545
+        },
+        {
+            "original_time": 15.0,
+            "start_time": 14.454545454545455,
+            "end_time": 15.545454545454545
+        },
+        {
+            "original_time": 20.0,
+            "start_time": 19.454545454545453,
+            "end_time": 20.545454545454547
+        },
+        {
+            "original_time": 25.0,
+            "start_time": 24.454545454545453,
+            "end_time": 25.545454545454547
+        },
+        {
+            "original_time": 30.0,
+            "start_time": 29.454545454545453,
+            "end_time": 30.545454545454547
+        },
+        {
+            "original_time": 35.0,
+            "start_time": 34.45454545454545,
+            "end_time": 35.54545454545455
+        },
+        {
+            "original_time": 40.0,
+            "start_time": 39.45454545454545,
+            "end_time": 40.54545454545455
+        },
+        {
+            "original_time": 45.0,
+            "start_time": 44.45454545454545,
+            "end_time": 45.54545454545455
+        },
+        {
+            "original_time": 50.0,
+            "start_time": 49.45454545454545,
+            "end_time": 50.54545454545455
+        },
+        {
+            "original_time": 55.0,
+            "start_time": 54.45454545454545,
+            "end_time": 55.54545454545455
+        },
+        {
+            "original_time": 60.0,
+            "start_time": 59.45454545454545,
+            "end_time": 60.54545454545455
+        },
+        {
+            "original_time": 65.0,
+            "start_time": 64.45454545454545,
+            "end_time": 65.54545454545455
+        },
+        {
+            "original_time": 70.0,
+            "start_time": 69.45454545454545,
+            "end_time": 70.54545454545455
+        },
+        {
+            "original_time": 75.0,
+            "start_time": 74.45454545454545,
+            "end_time": 75.54545454545455
+        },
+        {
+            "original_time": 80.0,
+            "start_time": 79.45454545454545,
+            "end_time": 80.54545454545455
+        },
+        {
+            "original_time": 85.0,
+            "start_time": 84.45454545454545,
+            "end_time": 85.54545454545455
+        },
+        {
+            "original_time": 90.0,
+            "start_time": 89.45454545454545,
+            "end_time": 90.54545454545455
+        },
+        {
+            "original_time": 95.0,
+            "start_time": 94.45454545454545,
+            "end_time": 95.54545454545455
+        },
+        {
+            "original_time": 100.0,
+            "start_time": 99.45454545454545,
+            "end_time": 100.54545454545455
+        },
+        {
+            "original_time": 105.0,
+            "start_time": 104.45454545454545,
+            "end_time": 105.54545454545455
+        },
+        {
+            "original_time": 110.0,
+            "start_time": 109.45454545454545,
+            "end_time": 110.54545454545455
+        },
+        {
+            "original_time": 115.0,
+            "start_time": 114.45454545454545,
+            "end_time": 115.54545454545455
+        },
+        {
+            "original_time": 120.0,
+            "start_time": 119.45454545454545,
+            "end_time": 120.54545454545455
+        }
+    ]
+}
