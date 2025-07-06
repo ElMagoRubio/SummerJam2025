@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3lmxg8xne2yt"
-path="res://.godot/imported/Drum_W.svg-dca83ce4e0acb21a7b82cd4097ec51b2.ctex"
+uid="uid://2q266uslrm1r"
+path="res://.godot/imported/Drum_W_1.svg-a2bb3b8fd8d2b939a66e310bb9b1f835.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/drums/Drum_W.svg"
-dest_files=["res://.godot/imported/Drum_W.svg-dca83ce4e0acb21a7b82cd4097ec51b2.ctex"]
+source_file="res://assets/sprites/drums/Drum_W_1.svg"
+dest_files=["res://.godot/imported/Drum_W_1.svg-a2bb3b8fd8d2b939a66e310bb9b1f835.ctex"]
 
 [params]
 

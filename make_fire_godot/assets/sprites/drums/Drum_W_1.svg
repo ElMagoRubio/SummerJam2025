@@ -4,10 +4,6 @@
     <style>
       .cls-1 {
         fill: #fff;
-        font-family: Bahnschrift-Bold, Bahnschrift;
-        font-size: 45px;
-        font-variation-settings: 'wght' 700, 'wdth' 100;
-        font-weight: 700;
       }
 
       .cls-2 {
@@ -27,6 +23,6 @@
     <polygon class="cls-2" points="107.67 87.49 102.19 87.49 111.31 40.86 118.17 40.86 107.67 87.49"/>
     <path class="cls-2" d="M60.71,134.64v-28.37h-9.2c.8,4.51,2.73,19.74-5.45,28.37h14.65Z"/>
     <path class="cls-2" d="M79.65,106.28h-9.2v28.37h14.65c-8.18-8.63-6.25-23.86-5.45-28.37Z"/>
-    <text class="cls-1" transform="translate(49.98 80.36)"><tspan x="0" y="0">O</tspan></text>
+    <path class="cls-1" d="M57.42,69.72l6.11-21.31h4.83l6.11,21.31,4.11-21.31h6.2l-7.36,31.95h-5.67l-5.67-22.32-5.93,22.32h-5.67l-7.36-31.95h6.2l4.11,21.31Z"/>
   </g>
 </svg>

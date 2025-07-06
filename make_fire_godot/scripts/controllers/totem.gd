@@ -6,7 +6,7 @@ extends Node2D
 @onready var light_4 = $LightLvl4
 @onready var button = $Button
 
-@onready var level = 0
+@onready var level = 4
 
 func _process(delta) -> void:
 	if (level == 0):
