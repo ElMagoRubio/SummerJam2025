@@ -6,6 +6,7 @@ var instrument: int
 
 func forward_input(event: InputEvent) -> void:
 	if event.is_action_pressed("KEY_INPUT_%d" % instrument):
+		print("INFO in TrackValidator.forward_input: Key pressed in validator nº %" % [instrument])
 		last_input_time = Time.get_ticks_msec() / 1000.0
 
 
