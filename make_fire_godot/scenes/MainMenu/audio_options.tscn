@@ -1,0 +1,150 @@
+[gd_scene load_steps=6 format=3 uid="uid://b3lakrtqion2h"]
+
+[ext_resource type="Script" uid="uid://bma3c06rja6yu" path="res://scripts/MainMenu/audio_options.gd" id="1_2ilwc"]
+[ext_resource type="Script" uid="uid://b5hqtjwv0u2vh" path="res://scripts/MainMenu/master_volume_slider.gd" id="2_bdsvm"]
+[ext_resource type="Texture2D" uid="uid://ccpgaygkjrnjt" path="res://assets/sprites/background/BG_Piramide-01.png" id="2_m8q71"]
+[ext_resource type="AudioStream" uid="uid://boxomsmwdlbri" path="res://assets/audio/menu/UI_Navigation.ogg" id="3_m8q71"]
+
+[sub_resource type="Theme" id="Theme_2ilwc"]
+Label/font_sizes/font_size = 31
+
+[node name="AudioOptions" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2ilwc")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_m8q71")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.478431)
+
+[node name="Audio" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(800, 800)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -120.0
+offset_right = 350.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Master" type="VBoxContainer" parent="Audio"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+
+[node name="volume_slider" type="HSlider" parent="Audio/Master"]
+custom_minimum_size = Vector2(700, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+max_value = 1.0
+step = 0.001
+script = ExtResource("2_bdsvm")
+bus_name = "Master"
+
+[node name="TextEdit1" type="TextEdit" parent="Audio/Master/volume_slider"]
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 0
+offset_left = 100.0
+offset_top = 58.0
+offset_right = 600.0
+offset_bottom = 108.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 50
+text = "Master"
+placeholder_text = "HOLA"
+editable = false
+
+[node name="Music" type="VBoxContainer" parent="Audio"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+
+[node name="volume_slider2" type="HSlider" parent="Audio/Music"]
+custom_minimum_size = Vector2(700, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+max_value = 1.0
+step = 0.001
+script = ExtResource("2_bdsvm")
+bus_name = "Music"
+
+[node name="TextEdit2" type="TextEdit" parent="Audio/Music/volume_slider2"]
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 0
+offset_left = 100.0
+offset_top = 58.0
+offset_right = 600.0
+offset_bottom = 108.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 50
+text = "Music"
+placeholder_text = "HOLA"
+editable = false
+
+[node name="SoundFX2" type="VBoxContainer" parent="Audio"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+
+[node name="volume_slider3" type="HSlider" parent="Audio/SoundFX2"]
+custom_minimum_size = Vector2(700, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+max_value = 1.0
+step = 0.001
+script = ExtResource("2_bdsvm")
+bus_name = "SFX"
+
+[node name="TextEdit3" type="TextEdit" parent="Audio/SoundFX2/volume_slider3"]
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 2
+offset_left = 100.0
+offset_top = 58.0
+offset_right = 600.0
+offset_bottom = 108.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme = SubResource("Theme_2ilwc")
+theme_override_font_sizes/font_size = 50
+text = "SFX"
+placeholder_text = "HOLA"
+editable = false
+
+[node name="Back" type="Button" parent="Audio"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 90
+text = "Back"
+
+[node name="SoundPlayer" type="AudioStreamPlayer" parent="Audio/Back"]
+stream = ExtResource("3_m8q71")
+
+[connection signal="value_changed" from="Audio/Master/volume_slider" to="." method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="Audio/Music/volume_slider2" to="." method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="Audio/SoundFX2/volume_slider3" to="." method="_on_h_slider_value_changed"]
+[connection signal="pressed" from="Audio/Back" to="." method="_on_back_pressed"]
