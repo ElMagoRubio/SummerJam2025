@@ -63,9 +63,10 @@ script = ExtResource("1_y4r1p")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_60mlk")
 animation = &"mantener"
-frame_progress = 0.246404
+frame_progress = 0.290823
 
 [node name="PlayNote" type="Button" parent="."]
+visible = false
 offset_left = -528.0
 offset_top = -944.0
 offset_right = 624.0
