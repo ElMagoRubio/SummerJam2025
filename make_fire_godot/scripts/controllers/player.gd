@@ -4,22 +4,44 @@ class_name DrumPlayer
 @onready var timer = $RotationTime
 @onready var sprite = $AnimatedSprite2D
 
-@onready var key # La tecla/instrumento correspondiente al jugador
-
 var counter = false
 
 func prepare() -> void:
 	counter = !counter
 	sprite.scale.x = abs(sprite.scale.x) * (-1 if counter else 1)
 
-	sprite.animation = "mantener"
+	sprite.animation = "maintain"
 	sprite.play()
 
-func hit() -> void:
-	sprite.animation = "golpe"
+func fail() -> void:
+	sprite.animation = "fail"
 	sprite.play()
 	
 	await sprite.animation_finished
 	
+	sprite.animation = "idle"
+	sprite.play()
+	
 	counter = !counter
 	sprite.scale.x = abs(sprite.scale.x) * (-1 if counter else 1)
+
+func hit() -> void:
+	sprite.animation = "hit"
+	sprite.play()
+	
+	await sprite.animation_finished
+	
+	sprite.animation = "idle"
+	sprite.play()
+	
+	counter = !counter
+	sprite.scale.x = abs(sprite.scale.x) * (-1 if counter else 1)
+
+func up() -> void:
+	sprite.animation = "up"
+	sprite.play()
+	
+	await sprite.animation_finished
+	
+	sprite.animation = "idle"
+	sprite.play()

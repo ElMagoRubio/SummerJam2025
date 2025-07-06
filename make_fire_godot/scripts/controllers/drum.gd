@@ -1,18 +1,32 @@
 extends Node2D
 
+@export var key_index: int
+
 const MAX_SCALE = 1.2
 const MIN_SCALE = 1.0
-const ANIM_DURATION = 0.025  # Tiempo de subida y bajada (total: 0.05s)
+const ANIM_DURATION = 0.025
 
 @onready var sprite = $Sprite2D
 @onready var button = $Button
 @onready var tween = get_tree().create_tween()
 
 func _ready():
+	_load_sprite()
 	button.pressed.connect(_on_button_pressed)
 
+func _load_sprite():
+	match key_index:
+		0:
+			sprite.texture = load(GlobalConstants.DRUM_SPRITE_Q)
+		1:
+			sprite.texture = load(GlobalConstants.DRUM_SPRITE_W)
+		2:
+			sprite.texture = load(GlobalConstants.DRUM_SPRITE_O)
+		3:
+			sprite.texture = load(GlobalConstants.DRUM_SPRITE_P)
+
+
 func _on_button_pressed():
-	# Reinicia el tween si ya se está ejecutando
 	if tween.is_running():
 		tween.kill()
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bdl4vu83jn5tc"]
 
 [ext_resource type="Script" uid="uid://dxr68s2sbln2w" path="res://scripts/controllers/player.gd" id="1_y4r1p"]
-[ext_resource type="SpriteFrames" uid="uid://duy36lmv5uyci" path="res://scenes/player.tres" id="2_qhqgy"]
+[ext_resource type="SpriteFrames" uid="uid://tonbgbcftp31" path="res://scenes/player.tres" id="2_qhqgy"]
 [ext_resource type="PackedScene" uid="uid://b10cro5tjwqry" path="res://scenes/drum.tscn" id="11_d2wvv"]
 
 [node name="Player" type="Node2D"]
@@ -9,7 +9,8 @@ script = ExtResource("1_y4r1p")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("2_qhqgy")
-animation = &"fail"
+animation = &"hit"
+autoplay = "idle"
 
 [node name="PlayNote" type="Button" parent="."]
 visible = false

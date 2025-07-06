@@ -1,14 +1,14 @@
 extends Node
 class_name TrackValidator
 
+var has_hit := false
 var last_input_time: float = -1.0
 var instrument: int
 
 func forward_input(event: InputEvent) -> void:
 	if event.is_action_pressed("KEY_INPUT_%d" % instrument):
-		print("INFO in TrackValidator.forward_input: Key pressed in validator nº %" % [instrument])
+		print("INFO in TrackValidator.forward_input: Key pressed in validator nº %d" % instrument)
 		last_input_time = Time.get_ticks_msec() / 1000.0
-
 
 func check_input(track: Track, note: Note) -> bool:
 	var input_time = _get_input_time_for_instrument(track._instrument)
@@ -16,3 +16,12 @@ func check_input(track: Track, note: Note) -> bool:
 
 func _get_input_time_for_instrument(_instrument: int) -> float:
 	return last_input_time
+
+func register_hit() -> void:
+	has_hit = true
+
+func reset_hit() -> void:
+	has_hit = false
+
+func has_successful_hit() -> bool:
+	return has_hit

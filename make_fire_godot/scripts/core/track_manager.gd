@@ -29,17 +29,17 @@ func start_track_execution() -> void:
 	for i in _tracks.size():
 		var track = _tracks[i]
 		var validator = TrackValidator.new()
-		validator.instrument = track._instrument
 		var responder:TrackResponder = TrackResponder.new()
-		responder.instrument = track._instrument 
-
-
-		add_child(responder)
 		add_child(validator)
+		add_child(responder)
 
+		validator.instrument = track._instrument
+		responder.instrument = track._instrument
+		
 		_responders.append(responder)
 		_validators.append(validator)
-
+		emit_signal("track_responder_registered", responder)
+		 
 		var thread := Thread.new()
 		_threads.append(thread)
 
@@ -50,12 +50,12 @@ func start_track_execution() -> void:
 
 func _thread_process_track(track: Track, responder: TrackResponder, validator: TrackValidator) -> void:
 	for note: Note in track._notes:
-		print("INFO in TrackManager._thread_process_track: Awating for note pressed %s" % note)
+		print("INFO in TrackManager._thread_process_track: Awating for note pressed in instrument %s" % track._instrument)
 		var wait_time := note._start_time - Time.get_ticks_msec() / 1000.0
 		if wait_time > 0:
 			await get_tree().create_timer(wait_time).timeout
 
-		await responder.emit_beat_events(note)
+		responder.emit_beat_events(note, validator)
 
 		var success = validator.check_input(track, note)
 		if success:
