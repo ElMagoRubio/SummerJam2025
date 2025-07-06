@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://f0am0bajc314"]
 
-[ext_resource type="Script" path="res://scripts/controllers/dancer.gd" id="1_sbecm"]
+[ext_resource type="Script" uid="uid://bcupcx5kcjcpx" path="res://scripts/controllers/dancer.gd" id="1_sbecm"]
 [ext_resource type="Texture2D" uid="uid://ctsbxfvysxlb1" path="res://assets/sprites/dancer/CH_Bailarin.svg" id="2_2hymp"]
 
 [node name="Dancer" type="Node2D"]

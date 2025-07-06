@@ -1,0 +1,75 @@
+[gd_scene load_steps=4 format=3 uid="uid://gfjx2bhka8co"]
+
+[ext_resource type="Texture2D" uid="uid://ccpgaygkjrnjt" path="res://assets/sprites/background/BG_Piramide-01.png" id="1_nsnpf"]
+[ext_resource type="Script" uid="uid://dnf2m5elg73d6" path="res://scripts/MainMenu/menu_options.gd" id="2_kgckb"]
+[ext_resource type="AudioStream" uid="uid://boxomsmwdlbri" path="res://assets/audio/menu/UI_Navigation.ogg" id="3_i2n1k"]
+
+[node name="MenuOpciones" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_kgckb")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_nsnpf")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.478431)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -337.0
+offset_top = -196.0
+offset_right = 337.0
+offset_bottom = 196.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Reanudar" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 90
+text = "Reanudar
+"
+
+[node name="Audio" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 90
+text = "Audio
+"
+
+[node name="Video" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 90
+text = "Video
+"
+
+[node name="Salir" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 90
+text = "Salir"
+
+[node name="SoundPlayer" type="AudioStreamPlayer" parent="VBoxContainer"]
+stream = ExtResource("3_i2n1k")
+
+[connection signal="pressed" from="VBoxContainer/Reanudar" to="." method="_on_reanudar_pressed"]
+[connection signal="pressed" from="VBoxContainer/Audio" to="." method="_on_audio_pressed"]
+[connection signal="pressed" from="VBoxContainer/Video" to="." method="_on_video_pressed"]
+[connection signal="pressed" from="VBoxContainer/Salir" to="." method="_on_salir_pressed"]

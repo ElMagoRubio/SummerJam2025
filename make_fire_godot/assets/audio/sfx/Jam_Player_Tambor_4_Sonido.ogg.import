@@ -2,7 +2,7 @@
 
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
-uid="uid://m1ifg4mb1bk0"
+uid="uid://ckffxskbd7nnm"
 path="res://.godot/imported/Jam_Player_Tambor_4_Sonido.ogg-b22c5b5dff9fb8f19e4749c35e6a03e6.oggvorbisstr"
 
 [deps]
@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/Jam_Player_Tambor_4_Sonido.ogg-b22c5b5dff9fb8
 [params]
 
 loop=false
-loop_offset=0.0
-bpm=0.0
+loop_offset=0
+bpm=0
 beat_count=0
 bar_beats=4
