@@ -4,6 +4,8 @@ class_name TrackValidator
 var has_hit := false
 var last_input_time: float = -1.0
 var instrument: int
+var _current_note: Note
+
 
 func forward_input(event: InputEvent) -> void:
 	if event.is_action_pressed("KEY_INPUT_%d" % instrument):
@@ -18,10 +20,15 @@ func _get_input_time_for_instrument(_instrument: int) -> float:
 	return last_input_time
 
 func register_hit() -> void:
-	has_hit = true
+	if not has_hit:
+		has_hit = true
 
 func reset_hit() -> void:
 	has_hit = false
 
 func has_successful_hit() -> bool:
 	return has_hit
+
+func set_current_note(note: Note) -> void:
+	_current_note = note
+	has_hit = false

@@ -11,17 +11,9 @@ script = ExtResource("1_y4r1p")
 sprite_frames = ExtResource("2_qhqgy")
 animation = &"hit"
 autoplay = "idle"
-
-[node name="PlayNote" type="Button" parent="."]
-visible = false
-offset_left = -528.0
-offset_top = -944.0
-offset_right = 624.0
-offset_bottom = 976.0
+frame = 4
+frame_progress = 1.0
 
 [node name="Drum" parent="." instance=ExtResource("11_d2wvv")]
 position = Vector2(0, 526)
 scale = Vector2(3, 3)
-
-[connection signal="button_down" from="PlayNote" to="." method="_on_play_note_button_down"]
-[connection signal="button_up" from="PlayNote" to="." method="_on_play_note_button_up"]

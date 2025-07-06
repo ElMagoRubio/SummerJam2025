@@ -25,19 +25,20 @@ func _process(delta: float) -> void:
 				var validator = track_manager._validators[i]
 				if validator != null and not validator.has_successful_hit():
 					validator.register_hit()
-					player_map[i].hit()
+					# player_map[i].hit()
 
 func _ready():
 	player_map.append_array([player_0, player_1, player_2, player_3])
 	track_manager = TrackManager.new()
-	track_manager.init_level(GlobalConstants.DEMO_LEVEL, GlobalConstants.DEMO_MODIFIER)
+	await track_manager.init_level(GlobalConstants.DEMO_LEVEL, GlobalConstants.DEMO_MODIFIER)
 	track_manager.start_track_execution()
 	_init_responder_events(track_manager._responders)
+	
 
 func _input(event: InputEvent) -> void:
 	for validator in track_manager._validators:
 		validator.forward_input(event)
-	var player_index: int
+	var player_index: int = -1
 	if event.is_action_pressed("KEY_INPUT_0"):
 		player_index = 0
 	if event.is_action_pressed("KEY_INPUT_1"):
@@ -53,7 +54,8 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ENTER"):
 		pass
 	
-	_play_player_animation(player_index)
+	if player_index != -1:
+		_play_player_animation(player_index)
 
 func _play_player_animation(player_index: int):
 	var player:DrumPlayer
@@ -78,17 +80,6 @@ func _prepare_player_for_hit(player_index: int):
 			player_2.prepare()
 		3:
 			player_3.prepare()
-
-func _player_hit(player_index: int):
-	match player_index:
-		0:
-			player_0.hit()
-		1:
-			player_1.hit()
-		2:
-			player_2.hit()
-		3:
-			player_3.hit()
 
 func _init_responder_events(responders: Array[TrackResponder]):
 	for responder: TrackResponder in responders:
