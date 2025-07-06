@@ -1,0 +1,129 @@
+{
+    "level": 1,
+    "instrument": 2,
+    "song_bpm": 110,
+    "tolerance_time": 0.5454545454545455,
+    "tolerance_modifier": 1.0,
+    "notes": [
+        {
+            "original_time": 3.0,
+            "start_time": 2.4545454545454546,
+            "end_time": 3.5454545454545454
+        },
+        {
+            "original_time": 8.0,
+            "start_time": 7.454545454545454,
+            "end_time": 8.545454545454545
+        },
+        {
+            "original_time": 13.0,
+            "start_time": 12.454545454545455,
+            "end_time": 13.545454545454545
+        },
+        {
+            "original_time": 18.0,
+            "start_time": 17.454545454545453,
+            "end_time": 18.545454545454547
+        },
+        {
+            "original_time": 23.0,
+            "start_time": 22.454545454545453,
+            "end_time": 23.545454545454547
+        },
+        {
+            "original_time": 28.0,
+            "start_time": 27.454545454545453,
+            "end_time": 28.545454545454547
+        },
+        {
+            "original_time": 33.0,
+            "start_time": 32.45454545454545,
+            "end_time": 33.54545454545455
+        },
+        {
+            "original_time": 38.0,
+            "start_time": 37.45454545454545,
+            "end_time": 38.54545454545455
+        },
+        {
+            "original_time": 43.0,
+            "start_time": 42.45454545454545,
+            "end_time": 43.54545454545455
+        },
+        {
+            "original_time": 48.0,
+            "start_time": 47.45454545454545,
+            "end_time": 48.54545454545455
+        },
+        {
+            "original_time": 53.0,
+            "start_time": 52.45454545454545,
+            "end_time": 53.54545454545455
+        },
+        {
+            "original_time": 58.0,
+            "start_time": 57.45454545454545,
+            "end_time": 58.54545454545455
+        },
+        {
+            "original_time": 63.0,
+            "start_time": 62.45454545454545,
+            "end_time": 63.54545454545455
+        },
+        {
+            "original_time": 68.0,
+            "start_time": 67.45454545454545,
+            "end_time": 68.54545454545455
+        },
+        {
+            "original_time": 73.0,
+            "start_time": 72.45454545454545,
+            "end_time": 73.54545454545455
+        },
+        {
+            "original_time": 78.0,
+            "start_time": 77.45454545454545,
+            "end_time": 78.54545454545455
+        },
+        {
+            "original_time": 83.0,
+            "start_time": 82.45454545454545,
+            "end_time": 83.54545454545455
+        },
+        {
+            "original_time": 88.0,
+            "start_time": 87.45454545454545,
+            "end_time": 88.54545454545455
+        },
+        {
+            "original_time": 93.0,
+            "start_time": 92.45454545454545,
+            "end_time": 93.54545454545455
+        },
+        {
+            "original_time": 98.0,
+            "start_time": 97.45454545454545,
+            "end_time": 98.54545454545455
+        },
+        {
+            "original_time": 103.0,
+            "start_time": 102.45454545454545,
+            "end_time": 103.54545454545455
+        },
+        {
+            "original_time": 108.0,
+            "start_time": 107.45454545454545,
+            "end_time": 108.54545454545455
+        },
+        {
+            "original_time": 113.0,
+            "start_time": 112.45454545454545,
+            "end_time": 113.54545454545455
+        },
+        {
+            "original_time": 118.0,
+            "start_time": 117.45454545454545,
+            "end_time": 118.54545454545455
+        }
+    ]
+}
