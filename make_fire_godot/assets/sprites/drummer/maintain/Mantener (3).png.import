@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://calpgnlptpbn0"
-path="res://.godot/imported/Mantener (3).png-58c7112d4d69157e0ec91edc305c72f2.ctex"
+uid="uid://d35h2f0y2ygdu"
+path="res://.godot/imported/Mantener (3).png-d807d47141580733ba001e986c19d7ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/drummer/Mantener (3).png"
-dest_files=["res://.godot/imported/Mantener (3).png-58c7112d4d69157e0ec91edc305c72f2.ctex"]
+source_file="res://assets/sprites/drummer/maintain/Mantener (3).png"
+dest_files=["res://.godot/imported/Mantener (3).png-d807d47141580733ba001e986c19d7ca.ctex"]
 
 [params]
 

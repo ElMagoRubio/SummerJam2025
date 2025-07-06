@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cireljyguam82"
-path="res://.godot/imported/Mantener (1).png-41b06eb0438eea97d4ece18d269c8f30.ctex"
+uid="uid://k8fmsmg5uqfn"
+path="res://.godot/imported/Idle (4).png-62f72d8b71184e66e3fe3da6cb1648f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/drummer/Mantener (1).png"
-dest_files=["res://.godot/imported/Mantener (1).png-41b06eb0438eea97d4ece18d269c8f30.ctex"]
+source_file="res://assets/sprites/drummer/idle/Idle (4).png"
+dest_files=["res://.godot/imported/Idle (4).png-62f72d8b71184e66e3fe3da6cb1648f6.ctex"]
 
 [params]
 

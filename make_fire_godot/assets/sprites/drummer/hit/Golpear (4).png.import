@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcvhwr6pjh2gm"
-path="res://.godot/imported/Mantener (2).png-656cbf85c8be5a2e490d6f2ba76c3912.ctex"
+uid="uid://bqdr0y00x8nec"
+path="res://.godot/imported/Golpear (4).png-bd8cee1fd9379531b39f097f728b94d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/drummer/Mantener (2).png"
-dest_files=["res://.godot/imported/Mantener (2).png-656cbf85c8be5a2e490d6f2ba76c3912.ctex"]
+source_file="res://assets/sprites/drummer/hit/Golpear (4).png"
+dest_files=["res://.godot/imported/Golpear (4).png-bd8cee1fd9379531b39f097f728b94d1.ctex"]
 
 [params]
 

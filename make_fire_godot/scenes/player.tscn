@@ -1,42 +1,77 @@
-[gd_scene load_steps=13 format=3 uid="uid://bdl4vu83jn5tc"]
+[gd_scene load_steps=22 format=3 uid="uid://bdl4vu83jn5tc"]
 
 [ext_resource type="Script" uid="uid://dxr68s2sbln2w" path="res://scripts/controllers/player.gd" id="1_y4r1p"]
-[ext_resource type="Texture2D" uid="uid://blgv0ljkevcrf" path="res://assets/sprites/drummer/Golpe (1).png" id="2_d2wvv"]
-[ext_resource type="Texture2D" uid="uid://cpairvhst8oog" path="res://assets/sprites/drummer/Golpe (2).png" id="3_3v2ag"]
-[ext_resource type="Texture2D" uid="uid://d3hakhfbjb74n" path="res://assets/sprites/drummer/Golpe (4).png" id="4_jej6c"]
-[ext_resource type="Texture2D" uid="uid://bmwk1dcx7hbc7" path="res://assets/sprites/drummer/Golpe (5).png" id="5_f1ej7"]
-[ext_resource type="Texture2D" uid="uid://cgkjjtn88o8r0" path="res://assets/sprites/drummer/Golpe (6).png" id="6_oprun"]
-[ext_resource type="Texture2D" uid="uid://dd7ipqyngwbr0" path="res://assets/sprites/drummer/Idle.png" id="7_a8ls1"]
-[ext_resource type="Texture2D" uid="uid://cireljyguam82" path="res://assets/sprites/drummer/Mantener (1).png" id="8_qfm1y"]
-[ext_resource type="Texture2D" uid="uid://dcvhwr6pjh2gm" path="res://assets/sprites/drummer/Mantener (2).png" id="9_fulsm"]
-[ext_resource type="Texture2D" uid="uid://calpgnlptpbn0" path="res://assets/sprites/drummer/Mantener (3).png" id="10_4r5pv"]
+[ext_resource type="Texture2D" uid="uid://imuwo5kju0v1" path="res://assets/sprites/drummer/fail/Fallo (1).png" id="2_60mlk"]
+[ext_resource type="Texture2D" uid="uid://bt560db7aqita" path="res://assets/sprites/drummer/fail/Fallo (2).png" id="3_i4ail"]
+[ext_resource type="Texture2D" uid="uid://belg27qkgunjh" path="res://assets/sprites/drummer/hit/Golpear (1).png" id="4_a38lo"]
+[ext_resource type="Texture2D" uid="uid://b26mhuqpt8fkg" path="res://assets/sprites/drummer/hit/Golpear (2).png" id="5_4ni07"]
+[ext_resource type="Texture2D" uid="uid://bqdr0y00x8nec" path="res://assets/sprites/drummer/hit/Golpear (4).png" id="6_l71n6"]
+[ext_resource type="Texture2D" uid="uid://c3uspb8prksp7" path="res://assets/sprites/drummer/hit/Golpear (5).png" id="7_ke2ow"]
+[ext_resource type="Texture2D" uid="uid://c0b5eouyncpti" path="res://assets/sprites/drummer/maintain/Mantener (1).png" id="8_qfm1y"]
+[ext_resource type="Texture2D" uid="uid://4h3safa3xiwy" path="res://assets/sprites/drummer/hit/Golpear (6).png" id="8_ujl30"]
+[ext_resource type="Texture2D" uid="uid://cc5x4ddvh1b0e" path="res://assets/sprites/drummer/idle/Idle (1).png" id="9_31cv2"]
+[ext_resource type="Texture2D" uid="uid://bm6bwjrcag85h" path="res://assets/sprites/drummer/maintain/Mantener (2).png" id="9_fulsm"]
+[ext_resource type="Texture2D" uid="uid://d35h2f0y2ygdu" path="res://assets/sprites/drummer/maintain/Mantener (3).png" id="10_4r5pv"]
+[ext_resource type="Texture2D" uid="uid://c8gftgljn2wke" path="res://assets/sprites/drummer/idle/Idle (2).png" id="10_pf23h"]
 [ext_resource type="PackedScene" uid="uid://b10cro5tjwqry" path="res://scenes/drum.tscn" id="11_d2wvv"]
+[ext_resource type="Texture2D" uid="uid://cl4n74amx78yc" path="res://assets/sprites/drummer/idle/Idle (3).png" id="11_dt7fs"]
+[ext_resource type="Texture2D" uid="uid://k8fmsmg5uqfn" path="res://assets/sprites/drummer/idle/Idle (4).png" id="12_wqfne"]
+[ext_resource type="Texture2D" uid="uid://de5nl56oltkf8" path="res://assets/sprites/drummer/idle/Idle (5).png" id="13_wnwbv"]
+[ext_resource type="Texture2D" uid="uid://bswlg4loo62qo" path="res://assets/sprites/drummer/idle/Idle (6).png" id="14_gl8cc"]
+[ext_resource type="Texture2D" uid="uid://cksam444kltsq" path="res://assets/sprites/drummer/up/UP (1).png" id="18_487ah"]
+[ext_resource type="Texture2D" uid="uid://dlyh5nkcy8moy" path="res://assets/sprites/drummer/up/UP (2).png" id="19_md1ol"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_60mlk"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_d2wvv")
+"texture": ExtResource("2_60mlk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_3v2ag")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_jej6c")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_f1ej7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_oprun")
+"texture": ExtResource("3_i4ail")
 }],
 "loop": false,
-"name": &"golpe",
-"speed": 12.0
+"name": &"fail",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("7_a8ls1")
+"texture": ExtResource("4_a38lo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4ni07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_l71n6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ke2ow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ujl30")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_31cv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_pf23h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_dt7fs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wqfne")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_wnwbv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_gl8cc")
 }],
 "loop": true,
 "name": &"idle",
@@ -53,8 +88,19 @@ animations = [{
 "texture": ExtResource("10_4r5pv")
 }],
 "loop": true,
-"name": &"mantener",
-"speed": 3.0
+"name": &"maintain",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_487ah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_md1ol")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
 }]
 
 [node name="Player" type="Node2D"]
@@ -62,11 +108,10 @@ script = ExtResource("1_y4r1p")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_60mlk")
-animation = &"mantener"
-frame_progress = 0.290823
+animation = &"up"
+autoplay = "idle"
 
 [node name="PlayNote" type="Button" parent="."]
-visible = false
 offset_left = -528.0
 offset_top = -944.0
 offset_right = 624.0
