@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bj5y3expj8h4h"]
+[gd_scene load_steps=9 format=3 uid="uid://bj5y3expj8h4h"]
 
 [ext_resource type="Script" uid="uid://ce1iwr0oeb3oc" path="res://scenes/main_scene.gd" id="1_7ykc4"]
 [ext_resource type="PackedScene" uid="uid://dpbuoytncr662" path="res://scenes/totem.tscn" id="1_w2twt"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://f0am0bajc314" path="res://scenes/dancer.tscn" id="4_pu3yx"]
 [ext_resource type="PackedScene" uid="uid://cxq28dsu7s8tn" path="res://scenes/sombra_fuego.tscn" id="6_rt2n2"]
 [ext_resource type="PackedScene" uid="uid://bdl4vu83jn5tc" path="res://scenes/player.tscn" id="7_c16ls"]
+[ext_resource type="AudioStream" uid="uid://cgms2a1g8p3yp" path="res://assets/audio/music/Jam player.ogg" id="8_18nlu"]
 
 [node name="MainScene" type="Node2D"]
 script = ExtResource("1_7ykc4")
@@ -172,5 +173,9 @@ scale = Vector2(0.25, -0.25)
 [node name="Player3" parent="." instance=ExtResource("7_c16ls")]
 position = Vector2(616, 864)
 scale = Vector2(0.25, 0.25)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_18nlu")
+autoplay = true
 
 [editable path="Player0"]
