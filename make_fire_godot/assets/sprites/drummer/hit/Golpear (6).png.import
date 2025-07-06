@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cr0ud3tdoj02e"
-path="res://.godot/imported/UP (1).png-aa653b23a10e0ef295d7097cc96a53b4.ctex"
+uid="uid://c3unqwxlisqsk"
+path="res://.godot/imported/Golpear (6).png-185b4242421be33cf9624f24d35087a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/drummer/UP (1).png"
-dest_files=["res://.godot/imported/UP (1).png-aa653b23a10e0ef295d7097cc96a53b4.ctex"]
+source_file="res://assets/sprites/drummer/hit/Golpear (6).png"
+dest_files=["res://.godot/imported/Golpear (6).png-185b4242421be33cf9624f24d35087a4.ctex"]
 
 [params]
 

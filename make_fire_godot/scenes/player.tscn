@@ -1,15 +1,15 @@
 [gd_scene load_steps=13 format=3 uid="uid://bdl4vu83jn5tc"]
 
 [ext_resource type="Script" uid="uid://dxr68s2sbln2w" path="res://scripts/controllers/player.gd" id="1_y4r1p"]
-[ext_resource type="Texture2D" uid="uid://blgv0ljkevcrf" path="res://assets/sprites/drummer/Golpe (1).png" id="2_d2wvv"]
-[ext_resource type="Texture2D" uid="uid://cpairvhst8oog" path="res://assets/sprites/drummer/Golpe (2).png" id="3_3v2ag"]
-[ext_resource type="Texture2D" uid="uid://d3hakhfbjb74n" path="res://assets/sprites/drummer/Golpe (4).png" id="4_jej6c"]
-[ext_resource type="Texture2D" uid="uid://bmwk1dcx7hbc7" path="res://assets/sprites/drummer/Golpe (5).png" id="5_f1ej7"]
-[ext_resource type="Texture2D" uid="uid://cgkjjtn88o8r0" path="res://assets/sprites/drummer/Golpe (6).png" id="6_oprun"]
-[ext_resource type="Texture2D" uid="uid://dd7ipqyngwbr0" path="res://assets/sprites/drummer/Idle.png" id="7_a8ls1"]
-[ext_resource type="Texture2D" uid="uid://cireljyguam82" path="res://assets/sprites/drummer/Mantener (1).png" id="8_qfm1y"]
-[ext_resource type="Texture2D" uid="uid://dcvhwr6pjh2gm" path="res://assets/sprites/drummer/Mantener (2).png" id="9_fulsm"]
-[ext_resource type="Texture2D" uid="uid://calpgnlptpbn0" path="res://assets/sprites/drummer/Mantener (3).png" id="10_4r5pv"]
+[ext_resource type="Texture2D" path="res://assets/sprites/drummer/Golpe (1).png" id="2_d2wvv"]
+[ext_resource type="Texture2D" path="res://assets/sprites/drummer/Golpe (2).png" id="3_3v2ag"]
+[ext_resource type="Texture2D" path="res://assets/sprites/drummer/Golpe (4).png" id="4_jej6c"]
+[ext_resource type="Texture2D" path="res://assets/sprites/drummer/Golpe (5).png" id="5_f1ej7"]
+[ext_resource type="Texture2D" path="res://assets/sprites/drummer/Golpe (6).png" id="6_oprun"]
+[ext_resource type="Texture2D" path="res://assets/sprites/drummer/Idle.png" id="7_a8ls1"]
+[ext_resource type="Texture2D" uid="uid://cireljyguam82" path="res://assets/sprites/drummer/maintain/Mantener (1).png" id="8_qfm1y"]
+[ext_resource type="Texture2D" uid="uid://dcvhwr6pjh2gm" path="res://assets/sprites/drummer/maintain/Mantener (2).png" id="9_fulsm"]
+[ext_resource type="Texture2D" uid="uid://calpgnlptpbn0" path="res://assets/sprites/drummer/maintain/Mantener (3).png" id="10_4r5pv"]
 [ext_resource type="PackedScene" uid="uid://b10cro5tjwqry" path="res://scenes/drum.tscn" id="11_d2wvv"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_60mlk"]
@@ -62,8 +62,7 @@ script = ExtResource("1_y4r1p")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_60mlk")
-animation = &"mantener"
-frame_progress = 0.290823
+animation = &"idle"
 
 [node name="PlayNote" type="Button" parent="."]
 visible = false

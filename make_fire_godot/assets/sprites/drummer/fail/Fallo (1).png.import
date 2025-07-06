@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcvhwr6pjh2gm"
-path="res://.godot/imported/Mantener (2).png-656cbf85c8be5a2e490d6f2ba76c3912.ctex"
+uid="uid://dtbp2kwn7myww"
+path="res://.godot/imported/Fallo (1).png-3edb6d60209acc856b39f7fbadfbfcd4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/drummer/Mantener (2).png"
-dest_files=["res://.godot/imported/Mantener (2).png-656cbf85c8be5a2e490d6f2ba76c3912.ctex"]
+source_file="res://assets/sprites/drummer/fail/Fallo (1).png"
+dest_files=["res://.godot/imported/Fallo (1).png-3edb6d60209acc856b39f7fbadfbfcd4.ctex"]
 
 [params]
 
