@@ -1,4 +1,5 @@
 extends Node2D
+class_name DrumPlayer
 
 @onready var timer = $RotationTime
 @onready var sprite = $AnimatedSprite2D
@@ -7,14 +8,14 @@ extends Node2D
 
 var counter = false
 
-func _on_play_note_button_down() -> void:
+func prepare() -> void:
 	counter = !counter
 	sprite.scale.x = abs(sprite.scale.x) * (-1 if counter else 1)
 
 	sprite.animation = "mantener"
 	sprite.play()
 
-func _on_play_note_button_up() -> void:
+func hit() -> void:
 	sprite.animation = "golpe"
 	sprite.play()
 	

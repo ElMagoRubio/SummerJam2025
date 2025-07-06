@@ -19,7 +19,7 @@ func init_level(level: int, modifier: int) -> void:
 	print("INFO: Level %d with modifier %d loaded" % [level, modifier])
 
 func _load_level_tracks() -> void:
-	for i in range(0, GlobalConstants.MAX_DIFFICULTY):
+	for i in range(0, GlobalConstants.MAX_PLAYERS):
 		var track = track_deserializer.load_track_from_json(_actual_level, i, _actual_modifier)
 		if track != null:
 			_tracks.append(track)
@@ -28,8 +28,11 @@ func _load_level_tracks() -> void:
 func start_track_execution() -> void:
 	for i in _tracks.size():
 		var track = _tracks[i]
-		var responder = TrackResponder.new()
 		var validator = TrackValidator.new()
+		validator.instrument = track._instrument
+		var responder:TrackResponder = TrackResponder.new()
+		responder.instrument = track._instrument 
+
 
 		add_child(responder)
 		add_child(validator)
@@ -46,14 +49,15 @@ func start_track_execution() -> void:
 
 
 func _thread_process_track(track: Track, responder: TrackResponder, validator: TrackValidator) -> void:
-	for note in track._notes:
+	for note: Note in track._notes:
+		print("INFO in TrackManager._thread_process_track: Awating for note pressed %s" % note)
 		var wait_time := note._start_time - Time.get_ticks_msec() / 1000.0
 		if wait_time > 0:
 			await get_tree().create_timer(wait_time).timeout
 
 		await responder.emit_beat_events(note)
 
-		var success = validator.check_input(note)
+		var success = validator.check_input(track, note)
 		if success:
 			call_deferred("_register_hit", track, note)
 		else:

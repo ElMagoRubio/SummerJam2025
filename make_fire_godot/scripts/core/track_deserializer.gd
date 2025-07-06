@@ -7,6 +7,9 @@ func load_track_from_json(level: int, instrument: int, modifier: int) -> Track:
 	
 	match instrument:
 		0: json_path = GlobalConstants.LEVEL_1_INSTRUMENT_0_MOD_1_MIDIJSON_PATH
+		1: json_path = GlobalConstants.LEVEL_1_INSTRUMENT_1_MOD_1_MIDIJSON_PATH
+		2: json_path = GlobalConstants.LEVEL_1_INSTRUMENT_2_MOD_1_MIDIJSON_PATH
+		3: json_path = GlobalConstants.LEVEL_1_INSTRUMENT_3_MOD_1_MIDIJSON_PATH
 	
 	var file = FileAccess.open(json_path, FileAccess.READ)
 	var content = file.get_as_text()
