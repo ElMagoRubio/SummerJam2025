@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://f0am0bajc314"]
+
+[ext_resource type="Script" path="res://scripts/controllers/dancer.gd" id="1_sbecm"]
+[ext_resource type="Texture2D" uid="uid://ctsbxfvysxlb1" path="res://assets/sprites/dancer/CH_Bailarin.svg" id="2_2hymp"]
+
+[node name="Dancer" type="Node2D"]
+script = ExtResource("1_sbecm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.290222, 2.49732)
+rotation = 0.261799
+scale = Vector2(1, 0.99389)
+texture = ExtResource("2_2hymp")
+
+[node name="RotationTime" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[connection signal="timeout" from="RotationTime" to="." method="_on_rotation_time_timeout"]

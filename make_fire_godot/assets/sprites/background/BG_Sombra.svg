@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 534.79 287.56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_67);
+      }
+    </style>
+    <radialGradient id="Degradado_sin_nombre_67" data-name="Degradado sin nombre 67" cx="261.53" cy="140.28" fx="298.84" fy="140.28" r="130.66" gradientTransform="translate(-6.44 400.42) rotate(-89.7) scale(1 1.9)" gradientUnits="userSpaceOnUse">
+      <stop offset=".15" stop-color="#861c3e"/>
+      <stop offset=".16" stop-color="#b8233a"/>
+      <stop offset=".49" stop-color="#b8233a"/>
+      <stop offset=".64" stop-color="#cc6273" stop-opacity=".71"/>
+      <stop offset=".95" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Capa_7" data-name="Capa 7">
+    <ellipse class="cls-1" cx="267.4" cy="143.78" rx="267.4" ry="143.78"/>
+  </g>
+</svg>

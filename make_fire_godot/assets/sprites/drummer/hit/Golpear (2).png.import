@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3cnsmjr3lf4p"
-path="res://.godot/imported/BG_Totem_1.svg-1579ee586617c751138ba09520c29857.ctex"
+uid="uid://c4my55oy2d8b1"
+path="res://.godot/imported/Golpear (2).png-2c54f2d4222a22b707a3a89d14e1970d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/BG_Totem_1.svg"
-dest_files=["res://.godot/imported/BG_Totem_1.svg-1579ee586617c751138ba09520c29857.ctex"]
+source_file="res://assets/sprites/drummer/hit/Golpear (2).png"
+dest_files=["res://.godot/imported/Golpear (2).png-2c54f2d4222a22b707a3a89d14e1970d.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

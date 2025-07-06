@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxkqqvto8bosy"
-path="res://.godot/imported/BG_Totem_3.svg-82aec1085bc398c01ecc57c0ec6a74e0.ctex"
+uid="uid://bjcoky0tsaab"
+path="res://.godot/imported/UP (2).png-5c7af38b30a9b2895445492150740dfa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/BG_Totem_3.svg"
-dest_files=["res://.godot/imported/BG_Totem_3.svg-82aec1085bc398c01ecc57c0ec6a74e0.ctex"]
+source_file="res://assets/sprites/drummer/up/UP (2).png"
+dest_files=["res://.godot/imported/UP (2).png-5c7af38b30a9b2895445492150740dfa.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

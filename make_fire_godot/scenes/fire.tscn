@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3 uid="uid://dd0ttixkhq8n"]
+
+[ext_resource type="Texture2D" uid="uid://crga5wxwba7oi" path="res://assets/sprites/fire/AS_Fire_B_1A.svg" id="1_g5mbl"]
+[ext_resource type="Texture2D" uid="uid://yefrpb1ig6d1" path="res://assets/sprites/fire/AS_Brillo_llama.svg" id="1_txieb"]
+[ext_resource type="Texture2D" uid="uid://dh1r6gxtjwnfr" path="res://assets/sprites/fire/AS_Fire_B_2A.svg" id="2_rach5"]
+[ext_resource type="Texture2D" uid="uid://css5aa86banen" path="res://assets/sprites/fire/AS_Fire_B_3A.svg" id="3_txieb"]
+[ext_resource type="Texture2D" uid="uid://cwyrpu60ot2nv" path="res://assets/sprites/fire/BG_Cauldron2.svg" id="4_rach5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4l61p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_g5mbl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_rach5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_txieb")
+}],
+"loop": true,
+"name": &"fire",
+"speed": 12.0
+}]
+
+[node name="Fire" type="Node2D"]
+
+[node name="Glow" type="Sprite2D" parent="."]
+position = Vector2(0, 158)
+scale = Vector2(3, 2.5)
+texture = ExtResource("1_txieb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_repeat = 2
+sprite_frames = SubResource("SpriteFrames_4l61p")
+animation = &"fire"
+autoplay = "fire"
+frame_progress = 0.71488
+
+[node name="Cauldron" type="Sprite2D" parent="."]
+position = Vector2(0, 671)
+scale = Vector2(1.78329, 1.78329)
+texture = ExtResource("4_rach5")
