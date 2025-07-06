@@ -5,11 +5,13 @@ extends Node2D
 @onready var light_3 = $LightLvl4/LightLvl3
 @onready var light_4 = $LightLvl4
 @onready var button = $Button
+@onready var fire = $"../Fire"
 
 @onready var level = 4
 
 func _process(delta) -> void:
 	if (level == 0):
+		fire.grow()
 		light_4.visible = false
 	elif (level == 1):
 		light_4.visible = true

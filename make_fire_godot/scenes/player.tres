@@ -30,7 +30,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"fail",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -50,7 +50,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"hit",
-"speed": 16.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -73,7 +73,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -87,7 +87,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"maintain",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,

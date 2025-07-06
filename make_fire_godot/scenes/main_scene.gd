@@ -10,6 +10,7 @@ var player_map: Array[DrumPlayer] = []
 @onready var player_3:DrumPlayer = $Player2
 
 
+
 func _ready():
 	player_map.append_array([player_0, player_1, player_2, player_3])
 	

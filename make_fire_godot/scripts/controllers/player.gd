@@ -26,6 +26,8 @@ func fail() -> void:
 	sprite.scale.x = abs(sprite.scale.x) * (-1 if counter else 1)
 
 func hit() -> void:
+	
+	
 	sprite.animation = "hit"
 	sprite.play()
 	
